@@ -24,15 +24,11 @@ namespace CustomersAJAX.Controllers
 
         }
 
-        //public IActionResult PartialViewMethod(Customer customer)
-        //{
-        //    return  PartialView (customer);
-        //}
-
+       
         [HttpPost]
         public IActionResult OnFormSubmit(string name, int age)
         {
-            var customer = new Customer(name, age);
+            var customer = new CustomerViewModel{Name = name, Age = age };
             ViewData["submit"] = "yes";
             return View("_CustomerDetails", customer);
         }

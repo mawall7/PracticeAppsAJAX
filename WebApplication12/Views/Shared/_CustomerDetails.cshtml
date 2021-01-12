@@ -1,13 +1,13 @@
-﻿@model CustomersAJAX.Models.Customer
+﻿@model CustomersAJAX.Models.CustomerViewModel
 
 
-@{ViewData["submit"] = "yes"; }
+@{ViewData["submit"] = "yes";}
 
 <h3>Customer Details</h3>
 @Html.DisplayNameFor(a => Model.Name)
 @Html.DisplayFor(a => Model.Name)
-<br />
+<br/>
 @Html.DisplayNameFor(a => Model.Age)
 @Html.DisplayFor(a => Model.Age)
-<br />
+<br/>
 <p>updated at @DateTime.Now</p>

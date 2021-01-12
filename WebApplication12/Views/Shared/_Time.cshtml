@@ -1,2 +1,15 @@
-﻿
-<h2>Time of last re-routing @DateTime.Now</h2>
+﻿<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" />
+
+
+
+@{ var ttext = "Last Re-routing Time";}
+@if (ViewData["submit"] == "yes")
+{
+    ttext = "Time of HttpPost";
+    <h2>@ttext @DateTime.Now</h2>
+
+}
+else { 
+<h2 class="ttext">@ttext @DateTime.Now</h2>
+}
