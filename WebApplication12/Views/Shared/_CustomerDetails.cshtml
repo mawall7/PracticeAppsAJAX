@@ -1,0 +1,13 @@
+﻿@model CustomersAJAX.Models.Customer
+
+
+@{ViewData["submit"] = "yes"; }
+
+<h3>Customer Details</h3>
+@Html.DisplayNameFor(a => Model.Name)
+@Html.DisplayFor(a => Model.Name)
+<br />
+@Html.DisplayNameFor(a => Model.Age)
+@Html.DisplayFor(a => Model.Age)
+<br />
+<p>updated at @DateTime.Now</p>
